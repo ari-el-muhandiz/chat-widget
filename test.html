@@ -1,0 +1,19 @@
+<!doctype html><html><head>
+    <title>Chat Widget</title>
+    <script>
+        (function() {
+        var s = document.createElement('script'); 
+        s.src = 'https://unpkg.com/chat-widget-twilio@1.0.0/dist/chat-widget.min.js'; 
+        s.async = true;
+        var chatEl = document.createElement('chat-box');
+        var chatMessage = document.createElement('hat-message');
+        chatEl.appendChild(chatMessage);
+        window.onload=function(){
+            document.querySelector('body').appendChild(s);
+            document.querySelector('body').appendChild(chatEl);
+        }
+        }());
+    </script>
+</head><body>
+    Tes
+</body></html>

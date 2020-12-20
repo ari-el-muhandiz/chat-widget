@@ -1,6 +1,7 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
+
 const webpack = require('webpack');
 
 const libraryName = 'chat-widget'; // TODO: Change me
@@ -9,6 +10,7 @@ const outputFile = `${libraryName}.min.js`;
 
 module.exports = {
   entry: './src/index.js',
+  mode: 'production',
   output: {
     library: libraryName,
     libraryTarget: 'umd',
@@ -50,8 +52,11 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
   plugins: [
-    new uglifyJsPlugin(),
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'index.html'),
     }),

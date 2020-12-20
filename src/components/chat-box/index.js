@@ -50,11 +50,11 @@ class ChatBox extends HTMLElement {
             textArea.disabled = false;
             return getMessages(channel);
         }).then((messages) => {
-            const totalMessages = messages.items.length;
-            for (let i = 0; i < totalMessages; i++) {
-              const message = messages.items[i];
-              this.addMessageToList(message);
-             }
+            // const totalMessages = messages.items.length;
+            // for (let i = 0; i < totalMessages; i++) {
+            //   const message = messages.items[i];
+            //   this.addMessageToList(message);
+            //  }
         });
   }
   

@@ -2,7 +2,7 @@ import fetch from 'isomorphic-unfetch';
 const Chat = require('twilio-chat');
 
 function fetchToken () {
-  const resp = fetch('http://localhost:3000/api/chat', {
+  const resp = fetch('https://twilio-chat-gamma.vercel.app/api/chat', {
     method: 'POST',
     headers: {
     'Accept': 'application/json',
