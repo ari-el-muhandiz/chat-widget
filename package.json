@@ -1,6 +1,6 @@
 {
   "name": "chat-widget-twilio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "widget for chat app with Twilio",
   "main": "index.js",
   "scripts": {
