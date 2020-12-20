@@ -1,0 +1,38 @@
+{
+  "name": "chat-widget",
+  "version": "1.0.0",
+  "description": "widget for chat app with Twilio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --open"
+  },
+  "keywords": [
+    "chat"
+  ],
+  "author": "Ari",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "cssnano": "^4.1.10",
+    "html-webpack-plugin": "^4.5.0",
+    "node-sass": "^5.0.0",
+    "postcss-loader": "^4.1.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "isomorphic-unfetch": "^3.1.0",
+    "twilio-chat": "^4.1.0"
+  }
+}
